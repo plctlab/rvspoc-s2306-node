@@ -81,8 +81,13 @@ class BindingData : public SnapshotableObject {
                               std::optional<std::string> base);
 };
 
-std::string FromFilePath(const std::string_view file_path);
-
+std::string FromFilePath(std::string_view file_path);
+bool FileURLToPath(Environment* env,
+                   const ada::url_aggregator& file_url,
+                   /* The linter can't detect the assign for result_file_path
+                      So we need to ignore since it suggest to put const */
+                   // NOLINTNEXTLINE(runtime/references)
+                   std::string& result_file_path);
 }  // namespace url
 
 }  // namespace node
