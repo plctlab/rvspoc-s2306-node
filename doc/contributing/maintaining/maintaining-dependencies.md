@@ -18,7 +18,7 @@ This a list of all the dependencies:
 * [googletest 2dd1c13][]
 * [histogram 0.11.8][]
 * [icu-small 73.2][]
-* [libuv 1.46.0][]
+* [libuv 1.48.0][]
 * [llhttp 8.1.0][]
 * [minimatch 9.0.3][]
 * [nghttp2 1.57.0][]
@@ -27,8 +27,9 @@ This a list of all the dependencies:
 * [npm 9.6.7][]
 * [openssl 3.0.8][]
 * [postject 1.0.0-alpha.6][]
-* [simdutf 3.2.18][]
-* [undici 5.26.4][]
+* [simdjson 3.7.0][]
+* [simdutf 4.0.4][]
+* [undici 5.28.1][]
 * [uvwasi 0.0.19][]
 * [V8 11.3.244.8][]
 * [zlib 1.2.13.1-motley-fef5869][]
@@ -206,7 +207,7 @@ and Java libraries providing Unicode and Globalization
 support for software applications.
 See [maintaining-icu][] for more informations.
 
-### libuv 1.46.0
+### libuv 1.48.0
 
 The [libuv](https://github.com/libuv/libuv) dependency is a
 multi-platform support library with a focus on asynchronous I/O.
@@ -286,7 +287,12 @@ See [maintaining-openssl][] for more informations.
 The [postject](https://github.com/nodejs/postject) dependency is used for the
 [Single Executable strategic initiative](https://github.com/nodejs/single-executable).
 
-### simdutf 3.2.18
+### simdjson 3.7.0
+
+The [simdjson](https://github.com/simdjson/simdjson) dependency is
+a C++ library for fast JSON parsing.
+
+### simdutf 4.0.4
 
 The [simdutf](https://github.com/simdutf/simdutf) dependency is
 a C++ library for fast UTF-8 decoding and encoding.
@@ -329,7 +335,7 @@ performance improvements not currently available in standard zlib.
 [googletest 2dd1c13]: #googletest-2dd1c13
 [histogram 0.11.8]: #histogram-0118
 [icu-small 73.2]: #icu-small-732
-[libuv 1.46.0]: #libuv-1460
+[libuv 1.48.0]: #libuv-1480
 [llhttp 8.1.0]: #llhttp-810
 [maintaining-V8]: ./maintaining-V8.md
 [maintaining-cjs-module-lexer]: ./maintaining-cjs-module-lexer.md
@@ -344,8 +350,9 @@ performance improvements not currently available in standard zlib.
 [npm 9.6.7]: #npm-967
 [openssl 3.0.8]: #openssl-308
 [postject 1.0.0-alpha.6]: #postject-100-alpha6
-[simdutf 3.2.18]: #simdutf-3218
-[undici 5.26.4]: #undici-5264
+[simdjson 3.7.0]: #simdjson-370
+[simdutf 4.0.4]: #simdutf-404
+[undici 5.28.1]: #undici-5281
 [update-openssl-action]: ../../../.github/workflows/update-openssl.yml
 [uvwasi 0.0.19]: #uvwasi-0019
 [v8 11.3.244.8]: #v8-1132448
